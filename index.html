@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salman Af Rahman | UI/UX Portfolio</title>
+  <meta name="description" content="UI/UX Designer portfolio of Salman Af Rahman. Projects, skills, education, publications, CV, and contact." />
+  <meta name="theme-color" content="#0b0d12" />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <!-- Subtle background effects -->
+  <div class="bgFX" aria-hidden="true">
+    <div class="bgFX__blob bgFX__blob--1"></div>
+    <div class="bgFX__blob bgFX__blob--2"></div>
+    <div class="bgFX__noise"></div>
+  </div>
+
+  <!-- Top progress bar -->
+  <div class="progress" id="progress"></div>
+
+  <!-- Header / Nav -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand__dot"></span>
+        <div class="brand__text">
+          <strong>Salman</strong>
+          <span>UI/UX Portfolio</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav__panel" id="navPanel" aria-hidden="true">
+          <ul class="nav__list" id="navList">
+            <li><a class="nav__link" href="#about">About</a></li>
+            <li><a class="nav__link" href="#skills">Skills</a></li>
+            <li><a class="nav__link" href="#projects">Projects</a></li>
+            <li><a class="nav__link" href="#education">Education</a></li>
+            <li><a class="nav__link" href="#publications">Publications</a></li>
+            <li><a class="nav__link" href="#activities">Activities</a></li>
+            <li><a class="nav__link" href="#cv">Resume</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <button class="btn btn--ghost" id="themeToggle" aria-label="Toggle theme">
+          <span class="icon" aria-hidden="true">☾</span>
+          <span class="btn__text">Theme</span>
+        </button>
+        <a class="btn btn--soft" href="#cv">Resume</a>
+        <a class="btn btn--primary btn--shine" href="#contact">Hire Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section">
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <p class="badge">
+            <span class="badge__dot" aria-hidden="true"></span>
+            UI/UX Designer • CSE Graduate
+          </p>
+
+          <h1 class="hero__title">
+            Designing clean, usable, and consistent digital experiences.
+          </h1>
+
+          <p class="hero__subtitle">
+            Strong foundations in user-centered design, interaction design, and responsive interfaces.
+            I translate design concepts into functional Flutter and web interfaces.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--shine" href="#projects">View Projects</a>
+            <button class="btn btn--ghost" id="copyEmailBtn" type="button">Copy Email</button>
+            <a class="btn btn--soft" href="#cv">View Resume</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="meta__item">
+              <span class="meta__label">Location</span>
+              <span class="meta__value">Gazipur, Dhaka, Bangladesh</span>
+            </div>
+            <div class="meta__item">
+              <span class="meta__label">Email</span>
+              <a class="meta__value link" href="mailto:sr24salman@gmail.com">sr24salman@gmail.com</a>
+            </div>
+            <div class="meta__item">
+              <span class="meta__label">Phone</span>
+              <a class="meta__value link" href="tel:+8801637571352">+8801637571352</a>
+            </div>
+          </div>
+
+          <div class="hero__stats" aria-label="Quick highlights">
+            <div class="statChip">
+              <span class="statChip__k">Focus</span>
+              <span class="statChip__v">Usability • Hierarchy • Accessibility</span>
+            </div>
+            <div class="statChip">
+              <span class="statChip__k">Workflow</span>
+              <span class="statChip__v">Figma → Flutter/Web</span>
+            </div>
+            <div class="statChip">
+              <span class="statChip__k">Tools</span>
+              <span class="statChip__v">Figma, Flutter, HTML/CSS/JS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <aside class="hero__right">
+          <!-- ✅ 1st Card: ONLY BIG PHOTO (as you asked) -->
+          <div class="card photoCard">
+            <div class="photoWrap" aria-hidden="true">
+              <!-- Change src if needed -->
+              <img
+                class="heroPhoto"
+                id="profilePhoto"
+                src="IMG_20250613_115741.jpg"
+                alt="Portrait of Salman Af Rahman"
+                loading="lazy"
+              />
+              <div class="photoFallback" id="avatarFallback">SR</div>
+
+              <div class="photoOverlay" aria-hidden="true"></div>
+
+              <div class="photoBadge">
+                <span class="statusDot" aria-hidden="true"></span>
+                Available for Full-time/ Remote / Internship /  Freelance
+              </div>
+            </div>
+          </div>
+
+          <!-- ✅ 2nd Card: Previous content moved DOWN -->
+          <div class="card profileInfo">
+            <div class="profileInfo__head">
+              <div>
+                <h2 class="profile__name">Salman Af Rahman</h2>
+                <p class="profile__role">UI/UX Designer</p>
+              </div>
+              <a class="btn btn--soft" href="#cv">Open Resume</a>
+            </div>
+
+            <div class="profile__links">
+              <!-- Replace with real links -->
+              <a class="chip link" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="chip link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="chip link" href="#projects">Case Studies</a>
+            </div>
+
+            <div class="profile__highlights">
+              <div class="mini">
+                <span class="mini__k">Strength</span>
+                <span class="mini__v">Clean layouts + scalable components</span>
+              </div>
+              <div class="mini">
+                <span class="mini__k">Style</span>
+                <span class="mini__v">Premium, editorial, motion-ready</span>
+              </div>
+              <div class="mini">
+                <span class="mini__k">Delivery</span>
+                <span class="mini__v">Design + Dev handoff clarity</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card quick">
+            <h3 class="card__title">Core Strengths</h3>
+            <ul class="list">
+              <li>User-centered UI/UX design with usability and accessibility</li>
+              <li>Wireframing, prototyping, and design system creation</li>
+              <li>Design-to-code workflow using Flutter and web technologies</li>
+              <li>Visual hierarchy, spacing, and interaction consistency</li>
+              <li>Scalable digital products with feedback-driven iteration</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2>About</h2>
+          <p>
+            UI/UX Designer and Computer Science and Engineering graduate with hands-on experience
+            designing digital products and translating designs into functional interfaces.
+          </p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3 class="card__title">What I bring</h3>
+            <p class="muted">
+              Detail-oriented approach with strong focus on usability, accessibility basics, and
+              design consistency across screens and components.
+            </p>
+            <div class="statrow">
+              <div class="stat">
+                <span class="stat__k">Design</span>
+                <span class="stat__v">Figma • Prototyping • Systems</span>
+              </div>
+              <div class="stat">
+                <span class="stat__k">Build</span>
+                <span class="stat__v">Flutter • HTML/CSS/JS</span>
+              </div>
+              <div class="stat">
+                <span class="stat__k">Mindset</span>
+                <span class="stat__v">User-first • Iteration • Clarity</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card__title">Design-to-Development</h3>
+            <p class="muted">
+              I convert UI designs into Flutter components and responsive web layouts,
+              maintaining spacing, hierarchy, and consistent interactions.
+            </p>
+            <div class="pillrow">
+              <span class="pill">Responsive Design</span>
+              <span class="pill">Interaction Design</span>
+              <span class="pill">Accessibility Basics</span>
+              <span class="pill">Micro-interactions</span>
+              <span class="pill">Design Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2>Skills</h2>
+          <p>A practical stack for UI/UX design and UI development.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card">
+            <h3 class="card__title">UI/UX Design</h3>
+            <ul class="list">
+              <li>Figma: Wireframing, Prototyping, Design Systems</li>
+              <li>Canva</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="card__title">Frontend & UI Dev</h3>
+            <ul class="list">
+              <li>Flutter</li>
+              <li>HTML, CSS, JavaScript</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="card__title">Other Tools</h3>
+            <ul class="list">
+              <li>VS Code, Android Studio</li>
+              <li>GitHub, Firebase</li>
+              <li>Python, SQL (Basic Queries)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2>Projects</h2>
+          <p>Filter projects, then open details in a modal.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="tabs" role="tablist" aria-label="Project filters">
+            <button class="tab is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="tab" data-filter="uiux" role="tab">UI/UX</button>
+            <button class="tab" data-filter="flutter" role="tab">Flutter</button>
+            <button class="tab" data-filter="web" role="tab">Web</button>
+            <button class="tab" data-filter="ml" role="tab">ML</button>
+          </div>
+
+          <div class="search">
+            <input id="projectSearch" type="search" placeholder="Search projects..." aria-label="Search projects"/>
+          </div>
+        </div>
+
+        <div class="cards" id="projectGrid">
+          <article class="pcard" data-tags="uiux figma" data-title="VERA (Fashion E-Commerce Mobile App)">
+            <div class="pcard__top">
+              <h3 class="pcard__title">VERA</h3>
+              <span class="pcard__tag">UI/UX • Figma</span>
+            </div>
+            <p class="pcard__desc">
+              Fashion e-commerce case study: user flows, IA, hi-fi UI, micro-interactions, motion.
+            </p>
+            <div class="pcard__actions">
+              <button class="btn btn--ghost pcard__open" data-project="vera">View Details</button>
+              <a class="btn btn--soft" href="#" target="_blank" rel="noreferrer">Design Link</a>
+              <a class="btn btn--soft" href="#" target="_blank" rel="noreferrer">Prototype Link</a>
+            </div>
+          </article>
+
+          <article class="pcard" data-tags="uiux figma" data-title="Online Pharmacy Mobile App">
+            <div class="pcard__top">
+              <h3 class="pcard__title">Online Pharmacy</h3>
+              <span class="pcard__tag">UI/UX • Figma</span>
+            </div>
+            <p class="pcard__desc">
+              End-to-end pharmacy UX: prescription flow, secure checkout, order tracking, system.
+            </p>
+            <div class="pcard__actions">
+              <button class="btn btn--ghost pcard__open" data-project="pharmacy">View Details</button>
+              <a class="btn btn--soft" href="#" target="_blank" rel="noreferrer">Design Link</a>
+              <a class="btn btn--soft" href="#" target="_blank" rel="noreferrer">Prototype Link</a>
+            </div>
+          </article>
+
+          <article class="pcard" data-tags="uiux figma" data-title="Aurum Stays (Luxury Hotel Booking App)">
+            <div class="pcard__top">
+              <h3 class="pcard__title">Aurum Stays</h3>
+              <span class="pcard__tag">UI/UX • Figma</span>
+            </div>
+            <p class="pcard__desc">
+              Luxury booking UX: responsive layouts, search-to-payment flow, subtle animations.
+            </p>
+            <div class="pcard__actions">
+              <button class="btn btn--ghost pcard__open" data-project="aurum">View Details</button>
+              <a class="btn btn--soft" href="#" target="_blank" rel="noreferrer">Design Link</a>
+              <a class="btn btn--soft" href="#" target="_blank" rel="noreferrer">Prototype Link</a>
+            </div>
+          </article>
+
+          <article class="pcard" data-tags="flutter firebase" data-title="SlideSpark – Slide-Based Mobile Application">
+            <div class="pcard__top">
+              <h3 class="pcard__title">SlideSpark</h3>
+              <span class="pcard__tag">Flutter • Firebase</span>
+            </div>
+            <p class="pcard__desc">
+              UI/UX-focused app for creating/editing/sharing slides with smooth navigation and layouts.
+            </p>
+            <div class="pcard__actions">
+              <button class="btn btn--ghost pcard__open" data-project="slidespark">View Details</button>
+              <a class="btn btn--soft" href="#" target="_blank" rel="noreferrer">Live</a>
+            </div>
+          </article>
+
+          <article class="pcard" data-tags="web javascript" data-title="ZoomTex – E-commerce Web Platform">
+            <div class="pcard__top">
+              <h3 class="pcard__title">ZoomTex</h3>
+              <span class="pcard__tag">Web • JS</span>
+            </div>
+            <p class="pcard__desc">
+              E-commerce website with clean UI, structured product layout, and intuitive flow.
+            </p>
+            <div class="pcard__actions">
+              <button class="btn btn--ghost pcard__open" data-project="zoomtex">View Details</button>
+              <a class="btn btn--soft" href="#" target="_blank" rel="noreferrer">Live</a>
+            </div>
+          </article>
+
+          <article class="pcard" data-tags="web javascript" data-title="Online Gaming Platform">
+            <div class="pcard__top">
+              <h3 class="pcard__title">Online Gaming Platform</h3>
+              <span class="pcard__tag">Web • Team</span>
+            </div>
+            <p class="pcard__desc">
+              Responsive platform with emphasis on layout clarity and user interaction.
+            </p>
+            <div class="pcard__actions">
+              <button class="btn btn--ghost pcard__open" data-project="gaming">View Details</button>
+              <a class="btn btn--soft" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="pcard" data-tags="uiux web" data-title="Job Uthso – Freelance & Remote Job Platform">
+            <div class="pcard__top">
+              <h3 class="pcard__title">Job Uthso</h3>
+              <span class="pcard__tag">UI/UX • Web</span>
+            </div>
+            <p class="pcard__desc">
+              Intuitive UI flows for freelancers and recruiters with clean navigation.
+            </p>
+            <div class="pcard__actions">
+              <button class="btn btn--ghost pcard__open" data-project="jobuthso">View Details</button>
+              <a class="btn btn--soft" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="pcard" data-tags="ml uiux" data-title="LeafCare – Leaf Disease Detection Platform">
+            <div class="pcard__top">
+              <h3 class="pcard__title">LeafCare</h3>
+              <span class="pcard__tag">UI/UX • ML</span>
+            </div>
+            <p class="pcard__desc">
+              Step-by-step flow for non-technical users with strong readability and responsive layout.
+            </p>
+            <div class="pcard__actions">
+              <button class="btn btn--ghost pcard__open" data-project="leafcare">View Details</button>
+              <a class="btn btn--soft" href="#" target="_blank" rel="noreferrer">Live</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+<section class="section" id="education">
+  <div class="container">
+    <div class="section__head">
+      <h2>Education</h2>
+      <p>Academic background.</p>
+    </div>
+
+    <div class="card timeline">
+
+      <!-- Bachelor -->
+      <div class="titem">
+        <div class="titem__dot" aria-hidden="true"></div>
+        <div class="titem__body">
+          <h3 class="titem__title">Daffodil International University</h3>
+          <p class="muted">
+            B.Sc in Computer Science and Engineering • 2022 – 2025 • CGPA: 3.21
+          </p>
+        </div>
+      </div>
+
+      <!-- HSC -->
+      <div class="titem">
+        <div class="titem__dot" aria-hidden="true"></div>
+        <div class="titem__body">
+          <h3 class="titem__title">Kazi Azim Uddin College, Gazipur</h3>
+          <p class="muted">
+            Higher Secondary Certificate (HSC) • 2020 • GPA: 4.75 
+          </p>
+        </div>
+      </div>
+
+      <!-- SSC -->
+      <div class="titem">
+        <div class="titem__dot" aria-hidden="true"></div>
+        <div class="titem__body">
+          <h3 class="titem__title">Khailkur Badsha Miah Agrani High School and College</h3>
+          <p class="muted">
+            Secondary School Certificate (SSC) • 2018 • GPA: 4.72 
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Publications -->
+    <section class="section" id="publications">
+      <div class="container">
+        <div class="section__head">
+          <h2>Publications</h2>
+          <p>Research and publications.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <ul class="list">
+              <li><strong>Burmese Grape Leaf Disease Dataset for Computer Vision-Based Plant Diagnosis</strong> — Data in Brief</li>
+              <li><strong>Behavioral Data-Driven Prediction of Suicide Risk Using Machine Learning</strong> — IDAA 2025</li>
+            </ul>
+          </div>
+          <div class="card">
+            <ul class="list">
+              <li><strong>Diagnosing Jujube Leaf Diseases via Image Classification</strong> — ICBISD 2025</li>
+              <li><strong>Early Detection of Sesame Leaf Diseases using CNN</strong> — ICBISD 2025</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section class="section" id="activities">
+      <div class="container">
+        <div class="section__head">
+          <h2>Extra-Curricular Activities</h2>
+          <p>Leadership and participation.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <ul class="list">
+              <li>Crack The Dataset 2024, DIU</li>
+              <li>Unlock The Algorithm (Fall 2023), DIU</li>
+            </ul>
+          </div>
+          <div class="card">
+            <ul class="list">
+              <li>Sports Secretary, DIU Blood Donation Club</li>
+              <li>Executive Member, Computer Programming Club (CPC)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px;">
+          <h3 class="card__title">Languages</h3>
+          <div class="pillrow">
+            <span class="pill">Bangla (Native)</span>
+            <span class="pill">English (Fluent)</span>
+            <span class="pill">Hindi (Conversational)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ CV -->
+
+<section class="section" id="cv">
+  <div class="container">
+    <div class="section__head">
+      <h2>Resume</h2>
+      <p>
+        View my Resume directly on this page and download the PDF.
+        (Upload your PDF file in the project folder as <strong>resume.pdf</strong>.)
+      </p>
+    </div>
+
+    <div class="cvGrid">
+      <div class="card cvViewer">
+        <div class="cvViewer__top">
+          <h3 class="card__title">Resume Preview</h3>
+
+          <div class="cvViewer__actions">
+            <!-- ✅ Preview button (no auto download on reload) -->
+            <button class="btn btn--soft" id="cvPreviewBtn" type="button">
+              Preview Resume
+            </button>
+
+            <!-- ✅ Download handled by JS on click -->
+            <a
+              class="btn btn--primary btn--shine"
+              id="cvDownload"
+              href="resume.pdf"
+              data-download="true"
+            >Download Resume</a>
+
+            <a
+              class="btn btn--ghost"
+              id="cvOpenNew"
+              href="resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >Open in new tab</a>
+          </div>
+        </div>
+
+        <div class="cvFrameWrap">
+          <!-- ✅ IMPORTANT: src নাই (এটাই auto download বন্ধ করবে) -->
+          <iframe
+            class="cvFrame"
+            title="CV Preview"
+            data-src="resume.pdf#view=FitH"
+          ></iframe>
+
+          <!-- ✅ Visible until user clicks Preview -->
+          <div class="cvFallback" id="cvFallback">
+            <p class="muted" style="margin:0 0 10px;">
+              Click “Preview Resume” to load the PDF here. If your browser downloads the file,
+              use “Open in new tab”.
+            </p>
+            <a class="btn btn--soft" href="resume.pdf" target="_blank" rel="noreferrer">Open CV</a>
+          </div>
+        </div>
+
+        <p class="hint muted" id="cvHint">
+          Tip: Click “Preview CV”. If preview doesn’t load, use “Open in new tab” or “Download CV”.
+        </p>
+      </div>
+
+      <div class="card cvSide">
+        <h3 class="card__title">Quick Resume Notes</h3>
+        <ul class="list">
+          <li>UI/UX projects: case studies, flows, hi-fi, motion.</li>
+          <li>Skills: Figma, Flutter, HTML/CSS/JS.</li>
+          <li>Research: publications + datasets.</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <div class="fileHint">
+          <span class="fileHint__pill">resume.pdf</span>
+          <button class="btn btn--ghost" id="copyCvNameBtn" type="button">Copy file name</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p>Quick actions for recruiters and collaborators.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3 class="card__title">Reach out</h3>
+
+            <div class="contact__actions">
+              <a class="btn btn--primary btn--shine" href="mailto:sr24salman@gmail.com">Email Me</a>
+              <a class="btn btn--ghost" href="tel:+8801637571352">Call</a>
+              <button class="btn btn--ghost" id="copyPhoneBtn" type="button">Copy Phone</button>
+            </div>
+
+            <div class="divider"></div>
+
+            <p class="muted">Links (replace the placeholders):</p>
+            <div class="pillrow">
+              <a class="pill link" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="pill link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card__title">Quick message</h3>
+            <form class="form" id="contactForm">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="your@email.com" required />
+              </label>
+              <label>
+                <span>Message</span>
+                <textarea name="message" rows="5" placeholder="What would you like to discuss?" required></textarea>
+              </label>
+              <button class="btn btn--primary btn--shine" type="submit">Create Email Draft</button>
+              <p class="hint muted" id="formHint">This opens your email app with a prefilled message.</p>
+            </form>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p class="muted">© <span id="year"></span> Salman Af Rahman • UI/UX Portfolio</p>
+          <a class="link" href="#top">Back to top</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__overlay" data-close="true"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Project details" tabindex="-1">
+      <div class="modal__head">
+        <h3 class="modal__title" id="modalTitle">Project</h3>
+        <button class="iconbtn" id="modalClose" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal__content" id="modalContent"></div>
+      <div class="modal__foot">
+        <button class="btn btn--ghost" data-close="true">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
