@@ -281,6 +281,79 @@ const modalClose = $("#modalClose");
 const modalPanel = $(".modal__panel");
 
 const projectDetails = {
+  gosnkr: {
+    title: "GoSNKR – Sneaker Marketplace App",
+    bullets: [
+      "Full-stack UI/UX system for a sneaker commerce platform with buyer discovery flows and store management tools.",
+      "Live local inventory, personalized size filtering, and seamless purchase & pickup journeys.",
+      "Reseller sourcing workflows and operational dashboards for stores and resellers.",
+      "Tooling: Figma."
+    ]
+  },
+  "four-elements-electric": {
+    title: "Four Elements Electric – Electrical Service Platform",
+    bullets: [
+      "End-to-end UI/UX for an electrical service platform including quote flows and troubleshooting.",
+      "Safety reminders, trusted partners section, and admin dashboard management.",
+      "Focused on usability, scalable workflows, and a clean customer-friendly experience.",
+      "Tooling: Figma."
+    ]
+  },
+  currently: {
+    title: "Currently – Focus & Study Management App",
+    bullets: [
+      "Full mobile app experience covering onboarding, synced classroom assignments, and AI/manual study planning.",
+      "Session tracking, progress insights, and account/settings flows.",
+      "Emphasized clarity, consistency, and a productivity-first design language.",
+      "Tooling: Figma."
+    ]
+  },
+
+  medicare: {
+  title: "Medicare – Healthcare Ecosystem Platform",
+  bullets: [
+    "Complete healthcare ecosystem platform with doctor consultation and hospital directory.",
+    "Medicine management, prescription upload system, and medical equipment shop.",
+    "Advanced RFQ (Request for Quote) system with order tracking and invoice management.",
+    "Wishlist, agent portal flows, and a scalable medical + eCommerce experience.",
+    "Focused on premium, trustworthy UI with consistent design language and production-ready structure.",
+    "Tooling: Figma • Web Platform."
+  ]
+},
+  testora: {
+    title: "Testora – E-Learning Platform",
+    bullets: [
+      "E-learning UX for mobile app, website, and admin dashboard.",
+      "Quiz flows, mock exams, rankings, subscriptions, and progress tracking.",
+      "Tooling: Figma."
+    ]
+  },
+  "mental-wellness": {
+    title: "Mental Wellness App",
+    bullets: [
+      "Calming interfaces and guided self-care flows for mental wellness.",
+      "Mood tracking and supportive user management experiences.",
+      "Admin dashboard for wellness content and user data management.",
+      "Tooling: Figma."
+    ]
+  },
+  care360: {
+    title: "Care360 – Healthcare Super App",
+    bullets: [
+      "Complete healthcare super app: doctor appointments, emergency support, and ambulance tracking.",
+      "AI-powered prescription scanning, pharmacy ordering, and medicine reminders.",
+      "Patient health records, secure payment systems, and a scalable digital healthcare ecosystem.",
+      "Tooling: Figma."
+    ]
+  },
+  "store-discovery": {
+    title: "Store & Product Discovery App",
+    bullets: [
+      "Location-based product discovery app with auth, search/filter, and store details.",
+      "Product list, map view, and admin store/product management dashboard.",
+      "Tooling: Figma."
+    ]
+  },
   vera: {
     title: "VERA – Fashion E-Commerce Mobile App",
     bullets: [
@@ -309,22 +382,22 @@ const projectDetails = {
     ]
   },
   slidespark: {
-    title: "SlideSpark – Slide-Based Mobile Application (Team)",
+    title: "SlideSpark – Slide-Based Mobile Application",
     bullets: [
       "UI-first slide creation/editing with clean navigation and smooth transitions.",
-      "Designed layouts + interaction states for an app-like feel.",
+      "Designed layouts and interaction states for an app-like feel.",
       "Tooling: Flutter, Firebase."
     ]
   },
   zoomtex: {
-    title: "ZoomTex – E-commerce Web Platform (Solo)",
+    title: "ZoomTex – E-commerce Web Platform",
     bullets: [
-      "Structured product layout + simple purchase flow.",
+      "Structured product layout and simple purchase flow.",
       "Built using HTML, CSS, and JavaScript."
     ]
   },
   gaming: {
-    title: "Online Gaming Platform (Team)",
+    title: "Online Gaming Platform",
     bullets: [
       "Responsive platform focused on layout clarity and interaction.",
       "Built using HTML, CSS, and JavaScript."
