@@ -308,18 +308,17 @@ const projectDetails = {
       "Tooling: Figma."
     ]
   },
-
-  medicare: {
-  title: "Medicare – Healthcare Ecosystem Platform",
-  bullets: [
-    "Complete healthcare ecosystem platform with doctor consultation and hospital directory.",
-    "Medicine management, prescription upload system, and medical equipment shop.",
-    "Advanced RFQ (Request for Quote) system with order tracking and invoice management.",
-    "Wishlist, agent portal flows, and a scalable medical + eCommerce experience.",
-    "Focused on premium, trustworthy UI with consistent design language and production-ready structure.",
-    "Tooling: Figma • Web Platform."
-  ]
-},
+  "medicare": {
+    title: "Medicare – Healthcare Ecosystem Platform",
+    bullets: [
+      "Complete healthcare ecosystem platform with doctor consultation and hospital directory.",
+      "Medicine management, prescription upload system, and medical equipment shop.",
+      "Advanced RFQ (Request for Quote) system with order tracking and invoice management.",
+      "Wishlist, agent portal flows, and a scalable medical + eCommerce experience.",
+      "Focused on premium, trustworthy UI with consistent design language and production-ready structure.",
+      "Tooling: Figma • Web Platform."
+    ]
+  },
   testora: {
     title: "Testora – E-Learning Platform",
     bullets: [
@@ -469,8 +468,10 @@ function closeModal(){
   }
 }
 
-$$(".pcard__open").forEach(btn => {
-  btn.addEventListener("click", () => openModal(btn.getAttribute("data-project")));
+// ✅ FIX: event delegation — সব .pcard__open button কাজ করবে
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".pcard__open");
+  if(btn) openModal(btn.getAttribute("data-project"));
 });
 
 if(modalClose) modalClose.addEventListener("click", closeModal);
@@ -525,17 +526,30 @@ if(contactForm){
 }
 
 // ---------------------------
+// CV Preview button
+// ---------------------------
+const cvPreviewBtn = $("#cvPreviewBtn");
+if(cvPreviewBtn){
+  cvPreviewBtn.addEventListener("click", () => {
+    const frame = $(".cvFrame");
+    const fallback = $("#cvFallback");
+    if(frame){
+      const src = frame.getAttribute("data-src");
+      if(src) frame.src = src;
+    }
+    if(fallback) fallback.style.display = "none";
+  });
+}
+
+// ---------------------------
 // CV Preview fallback (optional)
 // ---------------------------
 const cvFrame = $(".cvFrame");
 const cvFallback = $(".cvFallback");
 
-// If PDF doesn't load in iframe (some browsers), show fallback
 if(cvFrame && cvFallback){
-  // default hide fallback
   cvFallback.style.display = "none";
 
-  // if iframe doesn't load within 2.5s, show fallback (best-effort)
   const timer = setTimeout(() => {
     cvFallback.style.display = "block";
   }, 2500);
@@ -545,10 +559,6 @@ if(cvFrame && cvFallback){
     cvFallback.style.display = "none";
   });
 }
-
-
-
-
 
 // ---------------------------
 // CV Download: click করলে download (ONLY on click)
@@ -562,7 +572,7 @@ if(cvDownload){
 
     const a = document.createElement("a");
     a.href = url;
-    a.download = "Salman_Af_Rahman_CV.pdf"; // rename if you want
+    a.download = "Salman_Af_Rahman_CV.pdf";
     document.body.appendChild(a);
     a.click();
     a.remove();
