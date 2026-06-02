@@ -87,43 +87,60 @@
             <a class="btn btn--soft" href="#cv">View Resume</a>
           </div>
 
-          <div class="hero__meta">
-            <div class="meta__item">
-              <span class="meta__label">Location</span>
-              <span class="meta__value">Gazipur, Dhaka, Bangladesh</span>
-            </div>
-            <div class="meta__item">
-              <span class="meta__label">Email</span>
-              <a class="meta__value link" href="mailto:sr24salman@gmail.com">sr24salman@gmail.com</a>
-            </div>
-            <div class="meta__item">
-              <span class="meta__label">Phone</span>
-              <a class="meta__value link" href="tel:+8801637571352">+8801637571352</a>
-            </div>
-          </div>
+          <div class="card hero__meta-card">
+  <h3 class="card__title">Contact Info</h3>
+  <div class="hero__meta">
+    <div class="meta__item">
+      <span class="meta__label">📍 Location</span>
+      <span class="meta__value">Gazipur, Dhaka, Bangladesh</span>
+    </div>
+    <div class="meta__item">
+      <span class="meta__label">✉️ Email</span>
+      <a class="meta__value link" href="mailto:sr24salman@gmail.com">sr24salman@gmail.com</a>
+    </div>
+    <div class="meta__item">
+      <span class="meta__label">📞 Phone</span>
+      <a class="meta__value link" href="tel:+8801637571352">+8801637571352</a>
+    </div>
+  </div>
+</div>
 
-          <div class="hero__stats" aria-label="Quick highlights">
-            <div class="statChip">
-              <span class="statChip__k">Focus</span>
-              <span class="statChip__v">Usability • Hierarchy • Accessibility</span>
-            </div>
-            <div class="statChip">
-              <span class="statChip__k">Workflow</span>
-              <span class="statChip__v">Figma → Flutter/Web</span>
-            </div>
-            <div class="statChip">
-              <span class="statChip__k">Tools</span>
-              <span class="statChip__v">Figma, Flutter, HTML/CSS/JS</span>
-            </div>
+         <div class="card hero__meta-card">
+  <h3 class="card__title">Quick Highlights</h3>
+  <div class="hero__stats" aria-label="Quick highlights">
+    <div class="meta__item">
+      <span class="meta__label">🎯 Focus</span>
+      <span class="meta__value">Usability • Hierarchy • Accessibility</span>
+    </div>
+    <div class="meta__item">
+      <span class="meta__label">⚙️ Workflow</span>
+      <span class="meta__value">Figma → Flutter/Web</span>
+    </div>
+    <div class="meta__item">
+      <span class="meta__label">🛠️ Tools</span>
+      <span class="meta__value">Figma, Flutter, HTML/CSS/JS</span>
+    </div>
+  </div>
+</div>
+
+          <!-- ✅ Core Strengths moved HERE to left column -->
+          <div class="card quick" style="margin-top: 20px;">
+            <h3 class="card__title">Core Strengths</h3>
+            <ul class="list">
+              <li>User-centered UI/UX design with usability and accessibility</li>
+              <li>Wireframing, prototyping, and design system creation</li>
+              <li>Design-to-code workflow using Flutter and web technologies</li>
+              <li>Visual hierarchy, spacing, and interaction consistency</li>
+              <li>Scalable digital products with feedback-driven iteration</li>
+            </ul>
           </div>
         </div>
 
         <!-- Right -->
         <aside class="hero__right">
-          <!-- ✅ 1st Card: ONLY BIG PHOTO (as you asked) -->
-          <div class="card photoCard">
+          <!-- ✅ Photo Card with padding-bottom fix -->
+          <div class="card photoCard" >
             <div class="photoWrap" aria-hidden="true">
-              <!-- Change src if needed -->
               <img
                 class="heroPhoto"
                 id="profilePhoto"
@@ -142,8 +159,8 @@
             </div>
           </div>
 
-          <!-- ✅ 2nd Card: Previous content moved DOWN -->
-          <div class="card profileInfo">
+          <!-- Profile Info Card -->
+          <div class="card profileInfo" style="margin-top: 20px;">
             <div class="profileInfo__head">
               <div>
                 <h2 class="profile__name">Salman Af Rahman</h2>
@@ -153,10 +170,11 @@
             </div>
 
             <div class="profile__links">
-              <!-- Replace with real links -->
               <a class="chip link" href="https://www.linkedin.com/in/salman--rahman/" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a class="chip link" href="https://github.com/salmaanrahman\" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="chip link" href="#projects">Case Studies</a>
+              <a class="chip link" href="https://github.com/salmaanrahman" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="chip link" href="https://www.behance.net/salmanrahman25" target="_blank" rel="noreferrer">Behance</a>
+              <a class="chip link" href="https://dribbble.com/sr24salman" target="_blank" rel="noreferrer">Dribbble</a>
+              
             </div>
 
             <div class="profile__highlights">
@@ -175,16 +193,7 @@
             </div>
           </div>
 
-          <div class="card quick">
-            <h3 class="card__title">Core Strengths</h3>
-            <ul class="list">
-              <li>User-centered UI/UX design with usability and accessibility</li>
-              <li>Wireframing, prototyping, and design system creation</li>
-              <li>Design-to-code workflow using Flutter and web technologies</li>
-              <li>Visual hierarchy, spacing, and interaction consistency</li>
-              <li>Scalable digital products with feedback-driven iteration</li>
-            </ul>
-          </div>
+          <!-- ✅ Core Strengths card REMOVED from here -->
         </aside>
       </div>
     </section>
@@ -349,8 +358,6 @@
           </a>
         </div>
       </article>
-
-      <!-- আরো case study card add করতে পারবে এখানে -->
 
     </div>
   </div>
@@ -751,7 +758,7 @@
       </div>
     </section>
 
-    <!-- ✅ CV -->
+    <!-- CV -->
     <section class="section" id="cv">
       <div class="container">
         <div class="section__head">
@@ -768,12 +775,10 @@
               <h3 class="card__title">Resume Preview</h3>
 
               <div class="cvViewer__actions">
-                <!-- ✅ Preview button (no auto download on reload) -->
                 <button class="btn btn--soft" id="cvPreviewBtn" type="button">
                   Preview Resume
                 </button>
 
-                <!-- ✅ Download handled by JS on click -->
                 <a
                   class="btn btn--primary btn--shine"
                   id="cvDownload"
@@ -792,25 +797,23 @@
             </div>
 
             <div class="cvFrameWrap">
-              <!-- ✅ IMPORTANT: src নাই (এটাই auto download বন্ধ করবে) -->
               <iframe
                 class="cvFrame"
                 title="CV Preview"
                 data-src="resume.pdf#view=FitH"
               ></iframe>
 
-              <!-- ✅ Visible until user clicks Preview -->
               <div class="cvFallback" id="cvFallback">
                 <p class="muted" style="margin:0 0 10px;">
-                  Click “Preview Resume” to load the PDF here. If your browser downloads the file,
-                  use “Open in new tab”.
+                  Click "Preview Resume" to load the PDF here. If your browser downloads the file,
+                  use "Open in new tab".
                 </p>
                 <a class="btn btn--soft" href="resume.pdf" target="_blank" rel="noreferrer">Open CV</a>
               </div>
             </div>
 
             <p class="hint muted" id="cvHint">
-              Tip: Click “Preview CV”. If preview doesn’t load, use “Open in new tab” or “Download CV”.
+              Tip: Click "Preview CV". If preview doesn't load, use "Open in new tab" or "Download CV".
             </p>
           </div>
 
