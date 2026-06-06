@@ -299,7 +299,17 @@ const projectDetails = {
       "Tooling: Figma."
     ]
   },
-  currently: {
+  "amraoui": {
+    title: "Amraoui – Vehicle Transfer & Fleet Operations Platform",
+    bullets: [
+      "Designed an end-to-end vehicle transfer platform with Customer Portal, Driver App, and Admin Dashboard.",
+      "Created seamless workflows for transport requests, driver management, mission assignments, and vehicle inspections.",
+     "Built enterprise-grade dashboard experiences for delivery verification, expense tracking, invoicing, and operational monitoring.",
+     "Focused on scalability, usability, and streamlined logistics operations for high-volume transportation workflows.",
+     "Tooling: Figma."
+ ]
+  },
+  "currently": {
     title: "Currently – Focus & Study Management App",
     bullets: [
       "Full mobile app experience covering onboarding, synced classroom assignments, and AI/manual study planning.",
