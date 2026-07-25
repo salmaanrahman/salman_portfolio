@@ -290,6 +290,16 @@ const projectDetails = {
       "Tooling: Figma."
     ]
   },
+
+  "memillennial": {
+  title: "Memillennial – Beauty Services Marketplace",
+  bullets: [
+    "Designed a complete UI/UX system for a beauty services marketplace with customer booking, artist discovery, and appointment management.",
+    "Created seamless user journeys for business verification, payments, reviews, cancellations, and real-time notifications.",
+    "Designed a comprehensive admin dashboard for managing users, bookings, finance, content, verification workflows, analytics, and platform operations.",
+    "Tooling: Figma."
+  ]
+},
   "four-elements-electric": {
     title: "Four Elements Electric – Electrical Service Platform",
     bullets: [
