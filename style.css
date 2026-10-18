@@ -1,3 +1,48 @@
+
+
+
+.hero__title {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(32px, 4.5vw, 64px);
+  font-weight: 750;
+  line-height: 1.15;
+  letter-spacing: -0.045em;
+  color: #F5F5F7;
+  margin: 0 0 20px;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #7964FF 0%,
+    #59C4FA 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__left {
+  min-width: 0;
+}
+
+.hero__title {
+  width: max-content;
+  max-width: none;
+}
+
+@media (max-width: 768px) {
+  .hero__title {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(32px, 7vw, 44px);
+  }
+
+  .desktop-break {
+    display: none;
+  }
+}
+
 /* =========================
    THEME (same colors)
 ========================= */
